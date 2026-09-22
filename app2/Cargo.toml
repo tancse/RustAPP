@@ -21,4 +21,4 @@ path = "src/Conversionfns.rs"
 
 [[bin]]
 name = "arr"
-path = "src/vector.rs"
+path = "src/vector2.rs"

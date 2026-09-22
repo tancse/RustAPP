@@ -1,0 +1,24 @@
+[package]
+name = "app2"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = {version="0.4", features=["clock"]}
+chrono-tz = "0.10"
+
+[[bin]]
+name = "date1"
+path = "src/dateprops.rs"
+
+[[bin]]
+name = "date2"
+path = "src/dateprops2.rs"
+
+[[bin]]
+name = "date3"
+path = "src/Conversionfns.rs"
+
+[[bin]]
+name = "arr"
+path = "src/vector.rs"

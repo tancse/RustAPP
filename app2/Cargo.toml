@@ -21,4 +21,4 @@ path = "src/Conversionfns.rs"
 
 [[bin]]
 name = "arr"
-path = "src/struct4.rs"
+path = "src/mod2.rs"

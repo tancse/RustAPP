@@ -1,1 +1,1 @@
-C:\Users\user\Desktop\RustAPPs\app4\target\debug\app4.exe: C:\Users\user\Desktop\RustAPPs\app4\src\main.rs
+C:\Users\user\Desktop\RustAPPs\app4\target\debug\app4.exe: C:\Users\user\Desktop\RustAPPs\app4\src\main.rs C:\Users\user\Desktop\RustAPPs\app4\src\models.rs C:\Users\user\Desktop\RustAPPs\app4\src\schema.rs

@@ -31,9 +31,9 @@ fn create_table(){
 }
 fn insert() {
     let prod = ProductInsert{
-        name: "Dell 3525".to_string(),
-        price: 50000.00,
-        category: "Laptop".to_string(),
+        name: "iphone".to_string(),
+        price: 250000.00,
+        category: "mobile".to_string(),
     };
 
     let mut con = get_connection();
@@ -53,9 +53,32 @@ fn get_data(){
     }
 }
 
+fn update(){
+    let mut con = get_connection();
+    let product_id = 1;
+
+    diesel::update(products.filter(id.eq(product_id))).set((
+        name.eq("Dell 3525"),
+        price.eq(75000.00),
+        category.eq("Laptop"),
+    )).execute(&mut con).expect("Failed to update");
+
+    println!("Records Updated Successfully");
+}
+
+fn delete(){
+    let mut con = get_connection();
+    let product_id = 2;
+
+    diesel::delete(products.filter(id.eq(product_id))).execute(&mut con).expect("Failed to delete");
+
+    println!("Record delete successfully");
+}
 
 fn main() {
     //create_table();
     //insert();
+    get_data();
+    delete();
     get_data();
 }

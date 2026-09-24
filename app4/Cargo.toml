@@ -1,0 +1,8 @@
+[package]
+name = "app4"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+diesel = {version = "2.3.13", features = ["sqlite"]}
+libsqlite3-sys={version="0.38", features=["bundled"]}
